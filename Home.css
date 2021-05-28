@@ -1,0 +1,388 @@
+body{
+    margin:0;
+    font-family: helvetica;
+}
+.container{
+    width: 100%;
+    height: 2000px;
+}
+.cover-page{
+    width: 1hw;
+    height: 174px;
+    background: black;
+    
+}
+.search{
+    padding-left: 15px;
+    border: 0;
+    border-radius: 16px;
+    height: 36px;
+    margin-top: 54px;
+    margin-left: 170px;
+    width: 200px;
+    animation-duration: 5s;
+    animation-name: top-animation;
+    position: relative;
+}
+.search:focus{
+    
+    outline: none;
+}
+.svg-search{
+    width: 35px;
+    color: white;
+    margin: -13px;
+    margin-left: 14px;
+    animation-duration: 5s;
+    animation-name: top-animation;
+    position: relative;
+
+}
+.svg-search:hover{
+    cursor: pointer;
+    color:rgb(24, 211, 224) ;
+}
+.sign{
+    color: white;
+}
+.cvr-img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 66.666%;
+  animation-name: cvr-animation;
+  animation-duration: 5s;
+  position: relative;
+  padding-top: 60px;
+}
+@keyframes cvr-animation {
+    from{right: 1500px;}
+    to{right: 0px;}
+}
+.top{
+    background: black;
+    width: 1hw;
+    height: 150px;
+    
+}
+.top-left{
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+.top-right{
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+.top-logo{
+    margin-left: 250px;
+    animation-duration: 5s;
+    animation-name: top-animation;
+    position: relative;
+}
+@keyframes top-animation {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.top-cap{
+    color: white;
+    animation-duration: 5s;
+    animation-name: top-animation;
+    position: relative;
+    margin-top: -101px;
+    margin-left: 400px;
+    
+}    
+.svg-youtube{
+    width: 40px;
+    position: relative;
+    animation-duration: 5s;
+    animation-name: top-animation;
+    color: white;
+
+}
+.svg-insta{
+    width: 30px;
+    position: relative;
+    animation-duration: 5s;
+    animation-name: top-animation;
+    color: white;
+    margin-top: 55px;
+}
+.svg-mail{
+    width: 34px;
+    position: relative;
+    animation-duration: 5s;
+    animation-name: top-animation;
+    color: white;
+    margin-top: 55px;
+}
+.svg-youtube:hover{
+    cursor: pointer;
+    color: rgb(24, 211, 224);
+}
+.svg-insta:hover{
+    cursor: pointer;
+    color: rgb(24, 211, 224);
+}
+.link-svg{
+    margin-top: 50px;
+    margin-left: 0px;
+}
+.link-svg2{
+    margin-left: 100px;
+    margin-top: -5px;
+}
+.link-svg3{
+    margin-left: 100px;
+    margin-top: -4px;
+}
+.opt{
+    width: 1hw;
+    height: 73px;
+    background: black;
+}
+.opt-main{
+    height: 100%;
+    background: black;
+    margin-left: 254px ;
+    width: 1012px;
+}
+.opt1{
+    height: 100%;
+    width: 20%;
+    color: white;
+    text-align: center;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
+    line-height: 73px;
+    animation-duration: 5s;
+    animation-name: top-animation;
+    position: relative;
+}
+.opt1:hover{
+    background: rgb(0, 255, 242);
+    cursor: pointer;
+    color: black;
+}
+.main{
+    height: 2110px;
+    width: 1519.2px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(logo2.jpg);
+    margin-top: -21px;
+}
+
+span{
+    color: white;   
+}
+.main-cap{
+    font-size: 50px;
+}
+h1 span{
+    display: inline-block;
+    animation: cap-anim 1s linear forwards;
+}
+@keyframes cap-anim {
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+    
+}
+.main-cap-div{
+    padding-top: 100px;
+    text-align: center;
+}
+.main-cap2{
+    text-align: center;
+    font-size: 30px;
+}
+p span{
+    animation: cap-anim 1s linear forwards;
+    display: inline-block;
+}
+#slider{
+    overflow: hidden;
+    margin-top: 85px;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
+}
+.news{
+    background: none;
+    border: 1px white solid;
+    width: 750px;
+    height: 775px;
+    margin-top: 100px;
+    margin-left: 5px;
+    padding: 40px;
+    
+    float: left;
+}
+.news-cap{
+    color: white;
+    text-align: center;
+    position: relative;
+    animation-duration: 5s;
+    font-size: 62px;
+    font-family: gotham book;
+    margin-top: 0;
+    animation-name: top-animation;
+    
+}
+
+.news1{
+    width: 100%;
+    height: 115px;
+    margin-top: 20px;
+}
+.news1:hover{
+    cursor: pointer;
+    margin-left: 20px;
+    background: rgb(24, 24, 24);
+    
+}
+.news-img{
+    float: left;
+    height:115px ;
+    width: 200px;
+    animation-name: news-anim;
+    animation-duration: 3s;
+    position: relative;
+}
+.news-txt{
+    color: white;
+    font-size: 22px;
+    float: left;
+    width: 500px;
+    margin-left: 20px;
+    animation-name: news-anim;
+    animation-duration: 2s;
+    position: relative;
+}
+
+.main2{
+    height: 1519.2px;
+    width: 1519.2px;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(logo2.jpg);
+    z-index: 0;  
+    margin-top: -130px;
+}
+@keyframes news-anim {
+    0%{
+        opacity: 0;
+        filter: blur(10px);
+        left: 40px;
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0px);
+        left: 0px;
+    }
+}
+
+.releases{
+    background: none;
+    border: 1px  solid;
+    width: 640px;
+    height: 400px;
+    margin-top: 100px;
+    padding: 10px;
+    margin-left: 10px;
+    float: left;
+}
+.upcoming{
+    background: none;
+    border: 1px solid;
+    width: 640px;
+    height: 400px;
+    margin-top: 12px;
+    padding: 10px;
+    margin-left: 10px;
+    float: left;
+}
+#slider2{
+    overflow: hidden;
+    position: absolute;
+}
+#slider2 figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider2 figure img{
+    width: 8%;
+    float: left;
+}
+.footer{
+    width: 100%;
+    height: 250px;
+    background: rgb(21, 21, 21);
+    
+}
+.foot-icons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    float: left;
+}
+.copyright{
+    color: white;
+    float: left;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px ;
+}
+.foot-link{
+    text-decoration: none;
+    color: white;
+}
