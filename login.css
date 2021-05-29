@@ -1,3 +1,6 @@
+.top-left{
+    margin-left: 310px;
+}
 body{
     margin:0;
     font-family: helvetica;
@@ -25,8 +28,7 @@ body{
     position: relative;
 }
 .search:focus{
-    box-shadow: 0px 0px 30px rgb(0, 255, 242);
-    border-color: rgb(0, 255, 242);
+    
     outline: none;
 }
 .svg-search{
@@ -170,10 +172,30 @@ body{
     color: black;
 }
 .main{
-    height: 2110px;
+    height: 1100px;
     width: 1519.2px;
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(Images/logo2.jpg);
-    margin-top: -21px;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    
+}
+.login{
+    width: 37%;
+    height: 500px;
+    background: rgba(255, 255, 255,0.2);
+    border-radius: 20px;
+    margin-top: 200px;
+    padding: 50px;
+    position: relative;
+    
+}
+.login-txt{
+    font-size: 20px;
+    color: white;
+}
+.space{
+    padding-top: 20px;
 }
 
 span{
@@ -181,6 +203,38 @@ span{
 }
 .main-cap{
     font-size: 50px;
+    font-family: Gotham book;
+    margin-top: 0px;
+    padding-top: 50px;
+    
+}
+.login-cap{
+    width: 100%;
+    height: 100px;
+    background: black;
+    color: white;
+    text-align: center;
+        
+}
+.in-txt{
+    margin-top: 15px;
+    width: 530px;
+    height: 30px;
+    border-radius: 5px;
+}
+.in-txt:focus{
+    box-shadow: 0px 0px 10px rgb(0, 255, 242);
+    border-color: rgb(0, 255, 242);
+    outline: none;
+}
+.forgot{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+.forgotpass{
+    text-decoration: none;
+    color: white;
 }
 h1 span{
     display: inline-block;
