@@ -11,7 +11,7 @@ body{
 }
 .cover-page{
     width: 1hw;
-    height: 174px;
+    height: 270px;
     background: black;
     
 }
@@ -172,70 +172,122 @@ body{
     color: black;
 }
 .main{
-    height: 1100px;
+    height: 730px;
     width: 1519.2px;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(Images/logo2.jpg);
+    
     margin-top: -150px;
     display: flex;
     justify-content: center;
     
 }
-.login{
-    width: 37%;
-    height: 500px;
-    background: rgba(255, 255, 255,0.2);
-    border-radius: 20px;
-    margin-top: 200px;
-    padding: 50px;
+.main-left{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background: black;
+    display: flex;
+    justify-content: center;
+    
+    color: white;
+}
+.card{
     position: relative;
+    width: 500px;
+    height: 500px;
+    background: rgb(8, 63, 60);
+    transform-style:preserve-3d ;
+    transform: perspective(1000px);
+    box-shadow: 0px 0px 30px rgb(0, 255, 242);
+    transition: 1s;
+    margin-top: 100px;
+}
+
+.card .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .details .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card .details .content .h2{
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+}
+.imgbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform-origin: left;
+    transform-style:preserve-3d ;
+    background: black;
+    transition: 1s;
+    box-shadow: 0px 0px 30px rgb(0, 255, 242);
+}
+.imgbox img:nth-child(2){
+    transform: rotateY(180deg);
     
 }
-.login-txt{
-    font-size: 20px;
-    color: white;
+.imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style:preserve-3d ;
+    backface-visibility: hidden;
+}
+.card:hover{
+    transform: translateX(50%);
+    
+}
+.card:hover .imgbox{
+    transform: rotateY(-180deg);
+}
+.in-txt{
+    margin-top: 10px;
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    padding-left: 10px;
+}
+.in-txt:focus{
+    box-shadow: 0px 0px 30px rgb(0, 255, 242);
+    border: 0;
+    outline: none;
+}
+.log-btn{
+    margin-top: 30px;
+    width: 363px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 0;
+}
+.log-btn:hover{
+    cursor: pointer;
+    
 }
 .space{
     padding-top: 20px;
 }
-
-span{
-    color: white;   
-}
-.main-cap{
-    font-size: 50px;
-    font-family: Gotham book;
-    margin-top: 0px;
-    padding-top: 50px;
-    
-}
-.login-cap{
-    width: 100%;
-    height: 100px;
-    background: black;
-    color: white;
-    text-align: center;
-        
-}
-.in-txt{
-    margin-top: 15px;
-    width: 530px;
-    height: 30px;
-    border-radius: 5px;
-}
-.in-txt:focus{
-    box-shadow: 0px 0px 10px rgb(0, 255, 242);
-    border-color: rgb(0, 255, 242);
-    outline: none;
-}
 .forgot{
-    text-align: center;
-    font-size: 18px;
-    color: white;
-}
-.forgotpass{
     text-decoration: none;
     color: white;
 }
+
 h1 span{
     display: inline-block;
     animation: cap-anim 1s linear forwards;
@@ -251,172 +303,10 @@ h1 span{
         transform: rotateY(0deg);
         filter: blur(0);
     }
-    
-}
-.main-cap-div{
-    padding-top: 100px;
-    text-align: center;
-}
-.main-cap2{
-    text-align: center;
-    font-size: 30px;
-}
-p span{
-    animation: cap-anim 1s linear forwards;
-    display: inline-block;
-}
-#slider{
-    overflow: hidden;
-    margin-top: 85px;
-}
-#slider figure{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-#slider figure img{
-    width: 20%;
-    float: left;
-}
-@keyframes slider {
-    0%{
-        left: 0;
-    }
-    20%{
-        left: 0;
-    }
-    25%{
-        left: -100%;
-    }
-    45%{
-        left: -100%;
-    }
-    50%{
-        left: -200%;
-    }
-    70%{
-        left: -200%;
-    }
-    75%{
-        left: -300%;
-    }
-    95%{
-        left: -300%;
-    }
-    100%{
-        left: -400%;
-    }
-}
-.news{
-    background: none;
-    border: 1px white solid;
-    width: 750px;
-    height: 775px;
-    margin-top: 100px;
-    margin-left: 5px;
-    padding: 40px;
-    
-    float: left;
-}
-.news-cap{
-    color: white;
-    text-align: center;
-    position: relative;
-    animation-duration: 7s;
-    font-size: 62px;
-    font-family: gotham book;
-    margin-top: 0;
-    animation-name: top-animation;
-    
 }
 
-.news1{
-    width: 100%;
-    height: 115px;
-    margin-top: 20px;
-}
-.news1:hover{
-    cursor: pointer;
-    margin-left: 20px;
-    background: rgb(24, 24, 24);
-    
-}
-.news-img{
-    float: left;
-    height:115px ;
-    width: 200px;
-    animation-name: news-anim;
-    animation-duration: 3s;
-    position: relative;
-}
-.news-txt{
-    color: white;
-    font-size: 22px;
-    float: left;
-    width: 500px;
-    margin-left: 20px;
-    animation-name: news-anim;
-    animation-duration: 2s;
-    position: relative;
-}
 
-.main2{
-    height: 1519.2px;
-    width: 1519.2px;
-    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(Images/logo2.jpg);
-    z-index: 0;  
-    margin-top: -130px;
-}
-@keyframes news-anim {
-    0%{
-        opacity: 0;
-        filter: blur(10px);
-        left: 40px;
-    }
-    100%{
-        opacity: 1;
-        filter: blur(0px);
-        left: 0px;
-    }
-}
 
-.releases{
-    background: none;
-    border: 1px  solid;
-    width: 640px;
-    height: 400px;
-    margin-top: 100px;
-    padding: 10px;
-    margin-left: 10px;
-    float: left;
-}
-.upcoming{
-    background: none;
-    border: 1px solid;
-    width: 640px;
-    height: 400px;
-    margin-top: 12px;
-    padding: 10px;
-    margin-left: 10px;
-    float: left;
-}
-#slider2{
-    overflow: hidden;
-    position: absolute;
-}
-#slider2 figure{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-#slider2 figure img{
-    width: 8%;
-    float: left;
-}
 .footer{
     width: 100%;
     height: 250px;
