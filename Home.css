@@ -184,7 +184,7 @@ span{
 }
 h1 span{
     display: inline-block;
-    animation: cap-anim 1s linear forwards;
+    animation: cap-anim 2s linear forwards;
 }
 @keyframes cap-anim {
     0%{
@@ -208,7 +208,7 @@ h1 span{
     font-size: 30px;
 }
 p span{
-    animation: cap-anim 1s linear forwards;
+    animation: cap-anim 2s linear forwards;
     display: inline-block;
 }
 #slider{
