@@ -1,3 +1,5 @@
 # CinemaStellar
 Website of the youtube channel 'Cinemastellar'
-Open Homepage1.html
+
+[Click Here](https://shiyasmohd.github.io/CinemaStellar/) to go to website
+
